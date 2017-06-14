@@ -1,7 +1,8 @@
 body {
+
     margin-top: 60px;
-    color: #555
-    font-family: 'Dosis', sans-serif;
+    color: #555;
+
 }
 
 .rainbow {
@@ -12,9 +13,10 @@ body {
     background-clip: text;
 }
 
-.img-custom {
-    width: 50%
-    height: auto;
-    display: block;
+.img-resize {
+    height: 250px;
+}
 
+h1, h2, h3, p {
+    font-family: 'Dosis',sans-serif;
 }
