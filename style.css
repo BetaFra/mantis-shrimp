@@ -1,40 +1,31 @@
 
-/* xs < 768 */
-@media screen and (max-width: 767px) {
-    body {
-        font-size: 0.9em;
-    }
-}
-
-/* sm */
-@media screen and (min-width: 768px) {
-    body {
-        font-size: 5em;
-    }
-}
-
-/* md */
-@media screen and (min-width: 992px) {
-    body {
-        font-size: 1.2em;
-    }
-}
-
-/* lg */
-@media screen and (min-width: 1200px) {
-    body {
-        font-size: 1.3em;
-    }
-}
-
-
-
 body {
 
     margin-top: 60px;
     color: #555;
+    animation: colorchange 4s infinite;
+    -webkit-animation: colorchange 4s infinite;
 
 }
+
+@keyframes colorchange
+    {
+      0%   {background: linear-gradient(90deg, #69b7eb, #b3dbd3, #f4d6db);}
+      35%  { background: linear-gradient(90deg, #cfecd0, #ffc5ca);}
+      50%  {background: linear-gradient(90deg, #f598a8, #f6edb2);}
+      75%  {background: linear-gradient(90deg, #aea4e3, #d3ffe8)}
+      35% {background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db)}
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {background: linear-gradient(90deg, #69b7eb, #b3dbd3, #f4d6db);}
+      35%  { background: linear-gradient(90deg, #cfecd0, #ffc5ca);}
+      50%  {background: linear-gradient(90deg, #f598a8, #f6edb2);}
+      75%  {background: linear-gradient(90deg, #aea4e3, #d3ffe8)}
+      35% {background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db)}
+    }
+
 
 .rainbow {
     background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #259), color-stop(0.45, #2CD), color-stop(0.6, #2f2), color-stop(0.75, #00b300), color-stop(0.9, #ffdb4d), color-stop(1, #f22));
@@ -48,6 +39,16 @@ body {
     height: 250px;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, h4, p {
     font-family: 'Dosis',sans-serif;
+}
+
+p {
+    text-align: left;
+    margin:  20px;
+
+}
+
+.quote {
+    font-size: 12px;
 }
