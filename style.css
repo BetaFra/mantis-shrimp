@@ -11,23 +11,23 @@ body {
 @keyframes colorchange
     {
       0%   {background: linear-gradient(90deg, #69b7eb, #b3dbd3, #f4d6db);}
-      35%  { background: linear-gradient(90deg, #cfecd0, #ffc5ca);}
+      25%  { background: linear-gradient(90deg, #cfecd0, #ffc5ca);}
       50%  {background: linear-gradient(90deg, #f598a8, #f6edb2);}
-      75%  {background: linear-gradient(90deg, #aea4e3, #d3ffe8)}
-      35% {background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db)}
+      75%  {background: linear-gradient(90deg, #aea4e3, #d3ffe8);}
+      100% {background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);}
     }
 
     @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
     {
       0%   {background: linear-gradient(90deg, #69b7eb, #b3dbd3, #f4d6db);}
-      35%  { background: linear-gradient(90deg, #cfecd0, #ffc5ca);}
+      25%  { background: linear-gradient(90deg, #cfecd0, #ffc5ca);}
       50%  {background: linear-gradient(90deg, #f598a8, #f6edb2);}
-      75%  {background: linear-gradient(90deg, #aea4e3, #d3ffe8)}
-      35% {background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db)}
+      75%  {background: linear-gradient(90deg, #aea4e3, #d3ffe8);}
+      100% {background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);}
     }
 
 
-.rainbow {
+.rainbow, figcaption {
     background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #259), color-stop(0.45, #2CD), color-stop(0.6, #2f2), color-stop(0.75, #00b300), color-stop(0.9, #ffdb4d), color-stop(1, #f22));
     background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2), color-stop(0.75, #00b300), color-stop(0.9, #ffdb4d), color-stop(1, #f22));
     color: transparent;
@@ -51,4 +51,37 @@ p {
 
 .quote {
     font-size: 12px;
+}
+
+.shine {
+    -webkit-mask-image: linear-gradient(-54deg, rgba(0,0,0,.8) 40%, #000 35%, rgba(0,0,0,.8) 65%);
+  -webkit-mask-image: linear-gradient(-54deg, rgba(0,0,0,.8) 40%, #000 35%, rgba(0,0,0,.8) 65%);
+  -webkit-mask-size: 200%;
+  animation: shine 1.5s infinite;
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
+div {
+    margin: 10px auto;
+}
+
+ul.circle li {
+    display: inline-block;
+    margin: 10px 10px;
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    color: white;
+    vertical-align: middle;
 }
