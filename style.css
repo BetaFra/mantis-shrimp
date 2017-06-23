@@ -11,7 +11,7 @@ body {
 @keyframes colorchange
     {
       0%   {background: linear-gradient(90deg, #69b7eb, #b3dbd3, #f4d6db);}
-      25%  { background: linear-gradient(90deg, #cfecd0, #ffc5ca);}
+      25%  {background: linear-gradient(90deg, #cfecd0, #ffc5ca);}
       50%  {background: linear-gradient(90deg, #f598a8, #f6edb2);}
       75%  {background: linear-gradient(90deg, #aea4e3, #d3ffe8);}
       100% {background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);}
@@ -20,7 +20,7 @@ body {
     @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
     {
       0%   {background: linear-gradient(90deg, #69b7eb, #b3dbd3, #f4d6db);}
-      25%  { background: linear-gradient(90deg, #cfecd0, #ffc5ca);}
+      25%  {background: linear-gradient(90deg, #cfecd0, #ffc5ca);}
       50%  {background: linear-gradient(90deg, #f598a8, #f6edb2);}
       75%  {background: linear-gradient(90deg, #aea4e3, #d3ffe8);}
       100% {background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);}
@@ -39,13 +39,14 @@ body {
     height: 250px;
 }
 
-h1, h2, h3, h4, p {
+h1, h2, h3, h4, p, ul, li {
     font-family: 'Dosis',sans-serif;
 }
 
 p {
     text-align: left;
     margin:  20px;
+    font-size: 18px !important;
 
 }
 
@@ -84,4 +85,5 @@ ul.circle li {
     border-radius: 50px;
     color: white;
     line-height: 100px;
+    font-size: 22px !important;
 }
