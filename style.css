@@ -3,6 +3,7 @@ body {
 
     margin-top: 60px;
     color: #555;
+    background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);
     animation: colorchange 4s infinite;
     -webkit-animation: colorchange 4s infinite;
 
